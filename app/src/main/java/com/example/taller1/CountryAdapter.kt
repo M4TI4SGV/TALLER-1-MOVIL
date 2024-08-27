@@ -61,6 +61,7 @@ class CountryAdapter(private val countryList: List<Country>) :
             }
             context.startActivity(intent)
         }
+
     }
 
     override fun getItemCount() = countryList.size

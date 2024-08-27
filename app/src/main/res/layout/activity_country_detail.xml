@@ -2,17 +2,17 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:padding="16dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
+        android:background="@color/white"
+        android:elevation="4dp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -23,64 +23,78 @@
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:scaleType="centerInside"
-            android:contentDescription="@string/flag" />
+            android:contentDescription="@string/flag"
+            android:layout_marginBottom="16dp"/>
 
         <TextView
             android:id="@+id/country_name"
+            style="@style/Title1Text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            android:layout_marginTop="16dp" />
+            android:text="Country Name"
+            android:layout_marginBottom="8dp" />
 
         <TextView
             android:id="@+id/native_name"
+            style="@style/Title2Text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="18sp"
-            android:layout_marginTop="8dp" />
+            android:text="Native Name"
+            android:layout_marginBottom="16dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/dark_text_color"
+            android:layout_marginBottom="16dp"/>
 
         <TextView
             android:id="@+id/alpha3_code"
+            style="@style/Text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="18sp"
-            android:layout_marginTop="8dp" />
+            android:text="Alpha-3 Code: XXX"
+            android:layout_marginBottom="8dp" />
 
         <TextView
             android:id="@+id/currency_info"
+            style="@style/Text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="18sp"
-            android:layout_marginTop="8dp" />
+            android:text="Currency: XYZ (Symbol)"
+            android:layout_marginBottom="8dp" />
 
         <TextView
             android:id="@+id/region_info"
+            style="@style/Text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="18sp"
-            android:layout_marginTop="8dp" />
+            android:text="Region: XYZ"
+            android:layout_marginBottom="8dp" />
 
         <TextView
             android:id="@+id/sub_region_info"
+            style="@style/Text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="18sp"
-            android:layout_marginTop="8dp" />
+            android:text="Sub-Region: XYZ"
+            android:layout_marginBottom="8dp" />
 
         <TextView
             android:id="@+id/location_info"
+            style="@style/Text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="18sp"
-            android:layout_marginTop="8dp" />
+            android:text="Latitude: X, Longitude: Y"
+            android:layout_marginBottom="8dp" />
 
         <TextView
             android:id="@+id/area_info"
+            style="@style/Text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="18sp"
-            android:layout_marginTop="8dp" />
+            android:text="Area: XXX km²"
+            android:layout_marginBottom="8dp" />
 
     </LinearLayout>
 

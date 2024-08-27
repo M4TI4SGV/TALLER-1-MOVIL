@@ -16,5 +16,5 @@
     <color name="buttonColor">#8743B8</color>
     <color name="spinnerBackground">#EDEDED</color>
     <color name="spinnerBorderColor">#A165F8</color>
-
+    <color name="backgroundColor">#F5F5DC</color> <!-- Beige -->
 </resources>
