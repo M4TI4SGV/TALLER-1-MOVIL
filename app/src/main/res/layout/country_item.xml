@@ -1,0 +1,71 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="@color/colorPrimaryDark"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/image_view_flag"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/text_view_country_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/image_view_flag"
+            android:layout_marginStart="16dp"
+            android:text="Country Name"
+            style="@style/Title2Text" />
+
+        <TextView
+            android:id="@+id/text_view_native_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_view_country_name"
+            android:layout_alignStart="@id/text_view_country_name"
+            android:text="Native Name"
+            style="@style/Text"/>
+
+        <TextView
+            android:id="@+id/text_view_alpha3code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_view_native_name"
+            android:layout_alignStart="@id/text_view_country_name"
+            android:text="Alpha3Code"
+            style="@style/Text"/>
+
+        <TextView
+            android:id="@+id/text_view_currency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_view_alpha3code"
+            android:layout_alignStart="@id/text_view_country_name"
+            android:text="Currency"
+            style="@style/Text"/>
+
+        <ImageButton
+            android:id="@+id/button_call"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="?attr/selectableItemBackground"
+            android:src="@drawable/phone_ic"
+            android:contentDescription="@string/call"
+            android:scaleType="centerInside" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
