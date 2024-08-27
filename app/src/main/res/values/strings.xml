@@ -18,5 +18,6 @@
     <string name="title_activity_country_detail">Country Details</string>
     <string name="flag">Flag of the country</string>
     <string name="background_image_desc">background image desc</string>
+
 </resources>
 
